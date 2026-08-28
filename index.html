@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 콘텐츠제작소</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1b1f24;
+    --muted: #5c6570;
+    --rule: #e3e7eb;
+    --accent: #0a66c2;
+    --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --fg: #e8ebee;
+      --muted: #9aa4ae;
+      --rule: #2a2f35;
+      --accent: #6cb2f5;
+      --card: #1c2126;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+          "Pretendard", "Noto Sans KR", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 24px; margin-bottom: 40px; }
+  h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .note {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  code {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 0.88em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>개인정보처리방침</h1>
+    <p class="sub">콘텐츠제작소 · 최종 수정일 2026년 8월 28일</p>
+  </header>
+
+  <div class="note">
+    본 애플리케이션은 운영자 본인이 자신의 LinkedIn 계정에 콘텐츠를 게시하기 위해
+    사용하는 개인용 도구입니다. 일반 이용자를 대상으로 서비스를 제공하지 않으며,
+    운영자 본인 외의 개인정보를 수집하지 않습니다.
+  </div>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>LinkedIn OAuth 2.0 인증 과정에서 다음 정보를 받습니다.</p>
+  <ul>
+    <li>계정 식별자(<code>sub</code>), 이름, 프로필 사진 등 <code>openid</code> · <code>profile</code> 범위의 기본 프로필 정보</li>
+    <li>게시 권한(<code>w_member_social</code>)이 부여된 액세스 토큰 및 갱신 토큰</li>
+  </ul>
+  <p>비밀번호는 수집하지 않습니다. 인증은 LinkedIn이 직접 처리합니다.</p>
+
+  <h2>2. 이용 목적</h2>
+  <p>수집한 정보는 아래 목적으로만 사용합니다.</p>
+  <ul>
+    <li>운영자 본인 LinkedIn 계정에 게시물 및 첨부 파일(이미지·문서) 등록</li>
+    <li>게시물에 첫 댓글 등록</li>
+    <li>토큰 유효성 및 만료 시각 확인</li>
+  </ul>
+  <p>그 외 어떤 목적으로도 사용하지 않습니다.</p>
+
+  <h2>3. 보관 및 파기</h2>
+  <ul>
+    <li>액세스 토큰은 운영자의 로컬 기기에만 파일로 저장됩니다.</li>
+    <li>외부 서버로 전송하거나 원격 데이터베이스에 저장하지 않습니다.</li>
+    <li>토큰 만료, 파일 삭제, 또는 LinkedIn에서 앱 연결 해제 시 즉시 파기됩니다.</li>
+  </ul>
+
+  <h2>4. 제3자 제공</h2>
+  <p>수집한 정보를 제3자에게 제공, 공유, 판매하지 않습니다. 광고 및 분석 목적으로 사용하지 않습니다.</p>
+
+  <h2>5. 이용자의 권리</h2>
+  <p>
+    LinkedIn 설정의
+    <a href="https://www.linkedin.com/psettings/permitted-services" rel="noopener">허용된 서비스</a>
+    페이지에서 언제든 본 애플리케이션의 접근 권한을 철회할 수 있습니다.
+    철회 시 저장된 토큰은 즉시 무효화됩니다.
+  </p>
+
+  <h2>6. 문의</h2>
+  <p>본 방침에 관한 문의: <a href="mailto:jh6385@tkcnco.com">jh6385@tkcnco.com</a></p>
+
+  <footer>
+    본 방침이 변경될 경우 이 페이지에 수정일과 함께 게시합니다.
+  </footer>
+</main>
+</body>
+</html>
